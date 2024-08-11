@@ -63,12 +63,12 @@ while True:
     try:
         with open("log.json") as f:
             log = json.load(f)
-        log.append(datetime.now().strftime("%d/%m/%Y %H:%M:%S") + z)
+        log.append(datetime.now().strftime("%m/%d/%Y %H:%M:%S") + z)
         with open("log.json", "w") as f:
             json.dump(log, f, indent=4)
     except:
         log = []
-        log.append(datetime.now().strftime("%d/%m/%Y %H:%M:%S") + z)
+        log.append(datetime.now().strftime("%m/%d/%Y %H:%M:%S") + z)
         with open("log.json", "w") as f:
             json.dump(log, f, indent=4)
 
