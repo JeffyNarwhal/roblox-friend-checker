@@ -38,7 +38,7 @@ while True:
                     mentions = ""
                     for y in data["discord_webhook_mention_ids"]:
                         mentions += f"<@{y}> "
-                    DiscordWebhook(url=data["discord_webhook_link"], content=f"{mentions}\nUsers [{user1}](<https://www.roblox.com/users/{
+                    DiscordWebhook(url=data["discord_webhook_link"], content=f"{mentions}\nUsers [{user1}](<https://www.roblox.com/users/{ \
                         data["user1"][i]}/profile>) and [{user2}](<https://www.roblox.com/users/{data["user2"][i]}/profile>) aren't friends").execute()
                 print(f"Users {user1} and {user2} aren't friends")
                 z += f" - Users {user1} and {user2} aren't friends"
@@ -47,7 +47,7 @@ while True:
                     mentions = ""
                     for y in data["discord_webhook_mention_ids"]:
                         mentions += f"<@{y}> "
-                    DiscordWebhook(url=data["discord_webhook_link"], content=f"{mentions}\nUsers [{user1}](<https://www.roblox.com/users/{
+                    DiscordWebhook(url=data["discord_webhook_link"], content=f"{mentions}\nUsers [{user1}](<https://www.roblox.com/users/{ \
                         data["user1"][i]}/profile>) and [{user2}](<https://www.roblox.com/users/{data["user2"][i]}/profile>) are friends").execute()
                 print(f"Users {user1} and {user2} are friends")
                 z += f" - Users {user1} and {user2} aren't friends"

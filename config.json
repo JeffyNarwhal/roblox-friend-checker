@@ -6,12 +6,10 @@
         2
     ],
     "value": [
-        false
+        true
     ],
     "loop": false,
     "loop_time_mins": 15,
     "discord_webhook_link": "",
-    "discord_webhook_mention_ids": [
-
-    ]
+    "discord_webhook_mention_ids": []
 }
