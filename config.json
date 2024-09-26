@@ -10,6 +10,7 @@
     ],
     "loop": false,
     "loop_time_mins": 15,
+    "loop_time_seconds": 0,
     "discord_webhook_link": "",
     "discord_webhook_mention_ids": []
 }

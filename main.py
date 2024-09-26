@@ -58,6 +58,17 @@ def main():
             if x:
                 with open("config.json", "w") as f:
                     json.dump(data, f, indent=4)
+                try:
+                    with open("gol.json") as f:
+                        log = json.load(f)
+                    log.append(datetime.now().strftime("%m/%d/%Y %H:%M:%S") + z)
+                    with open("gol.json", "w") as f:
+                        json.dump(log, f, indent=4)
+                except:
+                    log = []
+                    log.append(datetime.now().strftime("%m/%d/%Y %H:%M:%S") + z)
+                    with open("gol.json", "w") as f:
+                        json.dump(log, f, indent=4)
         except:
             pass
 
@@ -74,7 +85,7 @@ def main():
                 json.dump(log, f, indent=4)
 
         if data["loop"]:
-            time.sleep(data["loop_time_mins"]*60)
+            time.sleep(data["loop_time_mins"]*60 + data["loop_time_seconds"])
         else:
             break
 
